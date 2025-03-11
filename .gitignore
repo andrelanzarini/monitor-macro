@@ -1,0 +1,25 @@
+# Ignorar pastas de ambientes virtuais Python
+venv/
+.env/
+
+# Ignorar arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar dependências instaladas
+*.log
+*.sqlite
+db.sqlite3
+
+# Ignorar dependências do Docker e VS Code
+.vscode/
+*.env
+.dockerignore
+docker-compose.override.yml
+
+# Ignorar dependências do Python (somente manter o requirements.txt)
+site-packages/
+pip-wheel-metadata/
+

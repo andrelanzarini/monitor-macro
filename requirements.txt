@@ -1,0 +1,6 @@
+flask
+pandas
+matplotlib
+yfinance
+sqlalchemy
+supervisor

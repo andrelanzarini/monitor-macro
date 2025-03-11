@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  monitormacro:
+    build: .
+    container_name: monitormacro
+    ports:
+      - "5000:5000"
+    networks:
+      - rede_monitor
+    environment:
+      - TZ=America/Sao_Paulo
+    volumes:
+      - .:/app
+    restart: always
+
+networks:
+  rede_monitor:
+    driver: bridge
